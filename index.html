@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rajiv Buda</title>
+    <meta
+      name="description"
+      content="Rajiv Buda — Support Operations Manager, Customer Success, and Technical Support leader. 14+ years across Microsoft, McAfee, and Accenture."
+    />
+    <meta name="theme-color" content="#0a0b0d" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0b0d;
+        --surface: #12141a;
+        --fg: #f0eee8;
+        --muted: #9b9ba6;
+        --subtle: #6e6e78;
+        --accent: #c5ccd6;
+        --border: #23262e;
+        --display: "Instrument Serif", "Times New Roman", serif;
+        --sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: var(--sans);
+        line-height: 1.5;
+      }
+      a { color: inherit; text-decoration: none; }
+      img { max-width: 100%; display: block; }
+      button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+      h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
+      p { text-wrap: pretty; }
+      .wrap { width: min(1152px, calc(100% - 2.5rem)); margin-inline: auto; }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid transparent;
+        background: color-mix(in oklab, var(--bg) 88%, transparent);
+        backdrop-filter: blur(12px);
+      }
+      .nav {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand { display: flex; align-items: center; gap: 12px; }
+      .mono {
+        width: 36px; height: 36px;
+        display: grid; place-items: center;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        font-family: var(--display);
+        font-size: 18px;
+        border-radius: 6px;
+      }
+      .links { display: flex; align-items: center; gap: 28px; }
+      .links a { font-size: 14px; color: var(--muted); }
+      .links a:hover { color: var(--fg); }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        height: 48px;
+        padding: 0 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid transparent;
+      }
+      .btn-solid { background: var(--fg); color: var(--bg); }
+      .btn-ghost { background: var(--surface); color: var(--fg); border-color: var(--border); }
+      .btn:active { transform: scale(0.96); }
+      .hero { padding: 96px 0 88px; }
+      .kicker {
+        font-size: 12px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0;
+      }
+      .name {
+        font-family: var(--display);
+        font-size: clamp(3rem, 10vw, 6rem);
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+        margin: 20px 0 0;
+      }
+      .lede { font-size: clamp(1.125rem, 2vw, 1.25rem); color: var(--muted); max-width: 36rem; margin-top: 24px; }
+      .meta { color: var(--subtle); font-size: 14px; margin-top: 16px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+      section { padding: 80px 0; border-top: 1px solid var(--border); }
+      .section-title {
+        font-family: var(--display);
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        margin-top: 12px;
+      }
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+        margin-top: 40px;
+      }
+      .metric { background: var(--bg); padding: 36px 28px; }
+      .metric b {
+        display: block;
+        font-family: var(--display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 400;
+        letter-spacing: -0.03em;
+      }
+      .metric span { display: block; margin-top: 12px; color: var(--muted); font-size: 14px; max-width: 16ch; }
+      .about { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
+      .summary { font-size: 18px; color: var(--muted); line-height: 1.7; margin: 0; }
+      .wins { list-style: none; padding: 0; margin: 40px 0 0; }
+      .wins li {
+        display: flex; gap: 16px;
+        border-top: 1px solid var(--border);
+        padding: 20px 0 0;
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .dot { width: 6px; height: 6px; border-radius: 99px; background: var(--accent); margin-top: 10px; flex: none; }
+      details { border-bottom: 1px solid var(--border); }
+      details:first-of-type { border-top: 1px solid var(--border); }
+      summary {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 24px 0;
+        list-style: none;
+        cursor: pointer;
+      }
+      summary::-webkit-details-marker { display: none; }
+      .role { font-family: var(--display); font-size: 22px; }
+      .org { color: var(--muted); font-size: 14px; margin-top: 4px; }
+      .when { color: var(--subtle); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; padding-top: 8px; }
+      details ul { margin: 0 0 28px; padding: 0; max-width: 48rem; }
+      details li { color: var(--muted); margin: 0 0 12px; line-height: 1.6; list-style: none; }
+      .grid-3 { display: grid; grid-template-columns: 1.2fr 0.9fr 0.9fr; gap: 24px; margin-top: 40px; }
+      .card {
+        border: 1px solid var(--border);
+        background: var(--surface);
+        border-radius: 14px;
+        padding: 28px;
+      }
+      .card h3 { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--subtle); }
+      .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+      .chip {
+        border: 1px solid var(--border);
+        background: var(--bg);
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+      }
+      .stack { list-style: none; padding: 0; margin: 20px 0 0; }
+      .stack li { border-bottom: 1px solid var(--border); padding: 12px 0; font-size: 14px; }
+      .stack li:last-child { border: 0; }
+      .contact h2 {
+        font-family: var(--display);
+        font-size: clamp(2.25rem, 6vw, 3.75rem);
+        line-height: 1.05;
+        margin-top: 16px;
+      }
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 32px 0;
+        color: var(--subtle);
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .menu-btn { display: none; width: 44px; height: 44px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+      @media (max-width: 900px) {
+        .metrics { grid-template-columns: 1fr 1fr; }
+        .about, .grid-3 { grid-template-columns: 1fr; gap: 40px; }
+        .links { display: none; }
+        .menu-btn { display: grid; place-items: center; }
+        footer { flex-direction: column; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        .btn:active { transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#top">
+          <span class="mono">RB</span>
+          <span>Rajiv Buda</span>
+        </a>
+        <nav class="links">
+          <a href="#about">About</a>
+          <a href="#impact">Impact</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Capabilities</a>
+          <a class="btn btn-solid" style="height:40px" href="mailto:maxrajiv@gmail.com">Get in touch</a>
+        </nav>
+        <a class="menu-btn" href="#contact" aria-label="Contact">Contact</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" style="border-top:0">
+        <div class="wrap">
+          <p class="kicker">Open to remote and global roles</p>
+          <h1 class="name">Rajiv Buda</h1>
+          <p class="lede">Support Operations Manager · Customer Success · Technical Support</p>
+          <p class="meta">Bengaluru, India · Open to remote</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
+            <a class="btn btn-ghost" href="./Rajiv-Buda-Resume.pdf">Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="impact">
+        <div class="wrap">
+          <p class="kicker" style="color:var(--subtle)">Impact</p>
+          <h2 class="section-title">Numbers that hold under pressure</h2>
+          <div class="metrics">
+            <div class="metric"><b>14+</b><span>Years leading support operations</span></div>
+            <div class="metric"><b>82</b><span>Professionals led across three regions</span></div>
+            <div class="metric"><b>100%</b><span>SLA compliance at Accenture</span></div>
+            <div class="metric"><b>30%</b><span>Escalation reduction at McAfee</span></div>
+            <div class="metric"><b>22%</b><span>Recurring-incident reduction</span></div>
+            <div class="metric"><b>$4B+</b><span>Enterprise portfolio supported</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="wrap about">
+          <div>
+            <p class="kicker" style="color:var(--subtle)">About</p>
+            <h2 class="section-title">Built for 24×7 enterprise service</h2>
+          </div>
+          <div>
+            <p class="summary">
+              Customer Success and Support Operations leader with 14+ years managing global 24×7 technical support, enterprise relationships, service delivery, escalation management, and support transformation across Microsoft, McAfee, and Accenture. Proven leading teams of up to 82 professionals across APAC, EMEA, and North America, governing SLAs and KPIs, and supporting enterprise portfolios exceeding $4 billion.
+            </p>
+            <ul class="wins">
+              <li><span class="dot"></span>Achieved 100% SLA compliance while leading an 82-member global support team for Microsoft accounts at Accenture.</li>
+              <li><span class="dot"></span>Reduced customer escalations by 30% at McAfee through real-time queue monitoring, QA workflows, process redesign, and targeted coaching.</li>
+              <li><span class="dot"></span>Improved CSAT by 12% at Microsoft through structured Voice of Customer programs and data-driven service improvements.</li>
+              <li><span class="dot"></span>Led McAfee Global Technical Operations insourcing from Sutherland across the US, Canada, EMEA, and APAC with zero service disruption.</li>
+              <li><span class="dot"></span>Managed the transition and onboarding of 500+ staff for a global Microsoft support organization at Accenture.</li>
+              <li><span class="dot"></span>Reduced recurring incidents by 22% through structured root cause analysis; improved team retention by 18% via career development and recognition.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="wrap">
+          <p class="kicker" style="color:var(--subtle)">Experience</p>
+          <h2 class="section-title">Fourteen years across Microsoft, McAfee, and Accenture</h2>
+          <div style="margin-top:48px">
+            <details open>
+              <summary>
+                <div>
+                  <div class="role">Customer Operations Manager</div>
+                  <div class="org">Microsoft · Bengaluru</div>
+                </div>
+                <div class="when">Mar 2024 — Sep 2025</div>
+              </summary>
+              <ul>
+                <li>Subject-matter expert in Microsoft Volume Licensing, providing transactional support to field sellers and customers on contracting and order management.</li>
+                <li>Managed validation and execution of agreements and post-sales lifecycle transactions against Global and SOX-approved deal financials.</li>
+                <li>Directed billing execution and credit approval management, including Finance exception approvals on high-value credits.</li>
+                <li>Primary point of contact for escalated operational customer service issues; reported KPIs through monthly business reviews.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Support Engineering Manager</div>
+                  <div class="org">Microsoft (via Teamware Solutions) · Bengaluru</div>
+                </div>
+                <div class="when">Oct 2023 — Mar 2024</div>
+              </summary>
+              <ul>
+                <li>Built and led Support Engineers and Support Escalation Engineers focused on performance, technical depth, and customer-obsessed delivery.</li>
+                <li>Acted as the voice of the customer to Microsoft Engineering, driving changes that enhanced the end-to-end customer experience.</li>
+                <li>Conducted assessments, coaching, feedback discussions, and individual career development planning.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Customer Service Manager</div>
+                  <div class="org">McAfee Software · Western Europe · Team of 25</div>
+                </div>
+                <div class="when">Dec 2020 — May 2022</div>
+              </summary>
+              <ul>
+                <li>Directed multilingual 24×7 support operations across Western Europe.</li>
+                <li>Reduced escalation rates by 30% through real-time queue monitoring, structured QA workflows, and targeted coaching.</li>
+                <li>Spearheaded insourcing of Global Technical Operations from Sutherland across the US, Canada, EMEA, and APAC.</li>
+                <li>Designed KPI dashboards tracking SLA compliance, ticket volumes, handle times, and CSAT.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Manager, Customer Success</div>
+                  <div class="org">Reliance Industries (RIL) · Bengaluru</div>
+                </div>
+                <div class="when">Feb 2020 — Nov 2020</div>
+              </summary>
+              <ul>
+                <li>Managed a portfolio of 50+ enterprise accounts including Apple, Amazon, Infosys, and Intel.</li>
+                <li>Shaped account strategy through structured quarterly business reviews.</li>
+                <li>Monitored usage trends to uncover expansion opportunities; contributed $1.5M+ in quarterly revenue through cross-selling.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Team Manager, Operations</div>
+                  <div class="org">Accenture · Global · Team of 82</div>
+                </div>
+                <div class="when">Apr 2018 — Feb 2020</div>
+              </summary>
+              <ul>
+                <li>Led an 82-member global support team for Microsoft accounts, achieving 100% SLA compliance.</li>
+                <li>Managed end-to-end transition of Microsoft support operations to Accenture, onboarding 500+ staff with zero service disruption.</li>
+                <li>Delivered Microsoft process workshops in Dalian, Bucharest, and San Jose.</li>
+                <li>Applied Prosci change management; reduced recurring incidents by 22% and improved team retention by 18%.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Sr. Support Analyst — Premier Services, SMSG</div>
+                  <div class="org">Microsoft (via Randstad India)</div>
+                </div>
+                <div class="when">Apr 2014 — Apr 2018</div>
+              </summary>
+              <ul>
+                <li>Primary delivery lead and technical account manager for strategic Microsoft Premier accounts.</li>
+                <li>Managed CXO relationships for Intel, Tesco, Genpact, and Juniper Networks.</li>
+                <li>Tracked Azure consumption and ARR milestones; featured in a $2.66M Intel success story and a $3.4M Tesco UK renewal.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Support Analyst</div>
+                  <div class="org">Accenture</div>
+                </div>
+                <div class="when">Jun 2012 — Dec 2013</div>
+              </summary>
+              <ul>
+                <li>ITIL-aligned incident management across Active Directory, IPSEC, Microsoft Tools, and SAP.</li>
+                <li>Escalation Manager for P2/P3 cases; contributed to problem management and continuous service improvement.</li>
+              </ul>
+            </details>
+            <details>
+              <summary>
+                <div>
+                  <div class="role">Sr. Support Engineer</div>
+                  <div class="org">Infinite Computer Solutions</div>
+                </div>
+                <div class="when">2011 — 2012</div>
+              </summary>
+              <ul>
+                <li>Delivered multi-channel technical support for Apple products.</li>
+                <li>Achieved 21% conversion rate on product recommendations through consultative selling.</li>
+              </ul>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="wrap">
+          <p class="kicker" style="color:var(--subtle)">Capabilities</p>
+          <h2 class="section-title">How the work actually gets done</h2>
+          <div class="grid-3">
+            <div class="card">
+              <h3>Core skills</h3>
+              <div class="chips">
+                <span class="chip">Support Operations Management</span>
+                <span class="chip">Global 24×7 Technical Support</span>
+                <span class="chip">Technical Support Leadership</span>
+                <span class="chip">Customer Success</span>
+                <span class="chip">Enterprise Account Management</span>
+                <span class="chip">SLA Governance & Compliance</span>
+                <span class="chip">Escalation & Incident Management</span>
+                <span class="chip">Root Cause Analysis</span>
+                <span class="chip">Service Delivery</span>
+                <span class="chip">CSAT / NPS</span>
+                <span class="chip">KPI & Performance Management</span>
+                <span class="chip">Workforce Planning</span>
+                <span class="chip">Quality Assurance</span>
+                <span class="chip">Coaching & Career Development</span>
+                <span class="chip">Change Management</span>
+                <span class="chip">Customer Onboarding</span>
+                <span class="chip">Stakeholder & Executive Communication</span>
+                <span class="chip">Azure Cloud Support</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Tools & platforms</h3>
+              <ul class="stack">
+                <li>ServiceNow (ITSM/CSM)</li>
+                <li>Zendesk</li>
+                <li>JIRA</li>
+                <li>Salesforce CRM</li>
+                <li>Power BI</li>
+                <li>Azure Portal</li>
+                <li>Microsoft Azure</li>
+              </ul>
+            </div>
+            <div>
+              <div class="card">
+                <h3>Certifications</h3>
+                <ul class="stack">
+                  <li>Prosci Change Management Practitioner</li>
+                  <li>Microsoft Azure for IT Pros</li>
+                  <li>Deploying Web Apps and Python — Microsoft</li>
+                  <li>Microsoft Blockchain as a Service</li>
+                  <li>Generative AI Fundamentals — Microsoft</li>
+                </ul>
+              </div>
+              <div class="card" style="margin-top:24px">
+                <h3>Languages</h3>
+                <ul class="stack">
+                  <li>English — Professional</li>
+                  <li>Hindi — Native</li>
+                  <li>Odia — Native</li>
+                  <li>Bengali — Conversational</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrap">
+          <p class="kicker" style="color:var(--subtle)">Contact</p>
+          <h2>Let’s talk about the next operating model.</h2>
+          <p class="lede">Available for Support Operations, Customer Success, and Technical Support leadership roles. Bengaluru-based, open to remote and global teams.</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
+            <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <p class="meta">B.Sc. — Biology · Utkal University · 2009</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="wrap">
+      <footer>
+        <p>Rajiv Buda · 2026</p>
+        <p>Support operations leadership, written plainly.</p>
+      </footer>
+    </div>
+  </body>
+</html>
