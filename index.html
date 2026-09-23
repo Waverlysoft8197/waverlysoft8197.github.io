@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rajiv Buda</title>
+    <title>Rajiv Buda — Customer × Technology × AI</title>
     <meta
       name="description"
-      content="Rajiv Buda — Customer Success, Growth, Enterprise Account Management, and AI Technology builder. 14+ years across Microsoft, McAfee, and Accenture."
+      content="Rajiv Buda — an enterprise customer leader building the next chapter at the intersection of customer growth, technology and AI."
     />
     <meta name="theme-color" content="#0a0b0d" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -269,6 +269,38 @@
         html { scroll-behavior: auto; }
         .btn:active { transform: none; }
       }
+    
+      /* Storytelling experience */
+      .story-hero{min-height:calc(100vh - 64px);display:grid;align-items:center;position:relative;overflow:hidden;padding:100px 0}
+      .story-hero:after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:80px;border:1px solid #ffffff0a;border-radius:50%;box-shadow:0 0 0 90px #ffffff03,0 0 0 180px #ffffff02;pointer-events:none}
+      .story-hero h1{font-family:var(--display);font-size:clamp(4rem,11vw,8rem);line-height:.86;letter-spacing:-.05em;margin:22px 0 30px;max-width:950px}
+      .story-hero h1 em{font-weight:400;color:#d9ff62}
+      .story-hero .lede{font-size:clamp(1.25rem,2.4vw,1.7rem);max-width:46rem}
+      .story-kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#d9ff62}
+      .scroll-cue{margin-top:65px;color:var(--subtle);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+      .chapter{display:grid;grid-template-columns:150px 1fr;gap:70px}
+      .chapter-no{font-size:11px;letter-spacing:.16em;color:var(--subtle);text-transform:uppercase}.chapter-no b{color:#d9ff62}
+      .story-title{font-family:var(--display);font-size:clamp(2.7rem,6vw,5rem);line-height:.96;letter-spacing:-.035em;max-width:850px}
+      .story-title em{font-weight:400;color:#aeb0b8}
+      .story-copy{font-size:19px;color:var(--muted);max-width:720px;line-height:1.75;margin-top:28px}
+      .journey{margin-top:65px;border-left:1px solid var(--border)}
+      .journey-row{position:relative;display:grid;grid-template-columns:130px 1fr;gap:35px;padding:0 0 52px 28px}
+      .journey-row:before{content:"";position:absolute;left:-4px;top:7px;width:7px;height:7px;border-radius:50%;background:var(--bg);border:1px solid var(--subtle)}
+      .journey-row:first-child:before{background:#d9ff62;border-color:#d9ff62}
+      .journey-year{font-size:11px;color:var(--subtle);letter-spacing:.08em}.journey-row h3{font-family:var(--display);font-size:30px;margin:0 0 8px}.journey-row p{color:var(--muted);max-width:680px;margin:0}
+      .turn{background:#0d0f12;position:relative;overflow:hidden}.turn:before{content:"AI";position:absolute;right:-20px;top:35px;font-family:var(--display);font-size:34vw;line-height:.7;color:#ffffff025}
+      .build-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;margin-top:55px}
+      .product-story,.terminal{border:1px solid var(--border);background:var(--surface);border-radius:16px;padding:30px}
+      .product-story h3{font-family:var(--display);font-size:48px;margin:20px 0 12px}.product-story p{color:var(--muted)}
+      .live{display:inline-block;font-size:10px;letter-spacing:.12em;color:#d9ff62;border:1px solid #d9ff6240;border-radius:99px;padding:5px 9px}
+      .flow{margin-top:28px;border-top:1px solid var(--border)}.flow div{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--border);font-size:13px}.flow span{color:var(--subtle)}
+      .terminal{background:#070809;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:2;color:#a7a9b0}.terminal b{color:#d9ff62}.terminal strong{color:var(--fg)}
+      .big-quote{font-family:var(--display);font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin-top:65px;max-width:900px}.big-quote em{font-weight:400;color:#d9ff62}
+      .intersection{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.paths>div{padding:20px 0;border-top:1px solid var(--border)}.paths h3{font-family:var(--display);font-size:27px;margin:0 0 5px}.paths p{margin:0;color:var(--muted);font-size:13px}
+      .venn{height:390px;position:relative;display:grid;place-items:center}.vc{position:absolute;width:220px;height:220px;border:1px solid #555861;border-radius:50%;display:grid;place-items:center;font-size:11px;letter-spacing:.1em}.v1{transform:translate(-70px,-55px)}.v2{transform:translate(70px,-55px)}.v3{transform:translate(0,70px)}.vcore{z-index:2;width:100px;height:100px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#d9ff62;color:#090a0c;font-size:11px;font-weight:600}
+      .reveal{opacity:0;transform:translateY(20px);transition:opacity .75s var(--ease),transform .75s var(--ease)}.reveal.in{opacity:1;transform:none}
+      @media(max-width:900px){.chapter,.build-grid,.intersection{grid-template-columns:1fr;gap:35px}.journey-row{grid-template-columns:1fr;gap:8px}.story-hero{min-height:auto}.venn{margin-top:20px}}
+      @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
     </style>
   </head>
 
@@ -281,10 +313,10 @@
         </a>
 
         <nav class="links">
-          <a href="#about">About</a>
+          <a href="#story">Story</a>
           <a href="#ai">AI & Technology</a>
           <a href="#impact">Impact</a>
-          <a href="#experience">Experience</a>
+          <a href="#intersection">Now</a>\n          <a href="#experience">Experience</a>
           <a href="#skills">Capabilities</a>
           <a class="btn btn-solid" style="height:40px" href="mailto:maxrajiv@gmail.com">Get in touch</a>
         </nav>
@@ -294,366 +326,60 @@
     </header>
 
     <main id="top">
-
-      <section class="hero" style="border-top:0">
+      <section class="story-hero" style="border-top:0">
         <div class="wrap">
-          <p class="kicker">Open to remote and global roles</p>
-
-          <h1 class="name">Rajiv Buda</h1>
-
-          <p class="lede">
-            Customer Success · Growth · Enterprise Account Management · AI Technology
-          </p>
-
-          <p class="meta">Bengaluru, India · Open to remote</p>
-
-          <div class="actions">
-            <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
-            <a
-              class="btn btn-ghost"
-              href="https://www.linkedin.com/in/rajivbuda-692410b0"
-              target="_blank"
-              rel="noreferrer"
-            >LinkedIn</a>
-            <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
-            <a class="btn btn-ghost" href="./Rajiv-Buda-Resume.pdf">Resume</a>
-          </div>
+          <p class="story-kicker">Customer × Technology × AI</p>
+          <h1>I'm building the <em>next</em> chapter.</h1>
+          <p class="lede">14+ years understanding enterprise customers, business, technology and people. Now I'm turning that experience into products with AI.</p>
+          <div class="actions"><a class="btn btn-solid" href="#story">Enter the story ↓</a><a class="btn btn-ghost" href="./Rajiv-Buda-Resume.pdf">Resume</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a></div>
+          <div class="scroll-cue">Scroll to explore ↓</div>
         </div>
       </section>
-
-      <section id="ai">
-        <div class="wrap">
-          <p class="kicker" style="color:var(--subtle)">AI & Technology</p>
-
-          <h2 class="section-title">Building with AI, not just talking about it</h2>
-
-          <div class="ai-box">
-            <h3>From enterprise leadership to hands-on AI product development</h3>
-
-            <p>
-              I have expanded from enterprise customer success, account management,
-              and technology operations into hands-on AI product development —
-              learning by building, deploying, debugging, and improving real
-              software.
-            </p>
-
-            <p>
-              <strong>HireOnAI.in</strong> is my current AI product project:
-              a job-search and career-coaching application combining live job
-              data, AI-assisted resume tailoring, skill recommendations,
-              authentication, data storage, analytics, SEO, and production
-              deployment. I designed and built the application end to end,
-              connecting AI APIs with a practical user workflow.
-            </p>
-
-            <div class="chips">
-              <span class="chip">AI Product Development</span>
-              <span class="chip">LLM Integration</span>
-              <span class="chip">Python FastAPI</span>
-              <span class="chip">Groq</span>
-              <span class="chip">Claude API</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">Supabase</span>
-              <span class="chip">Redis</span>
-              <span class="chip">Google OAuth</span>
-              <span class="chip">Render</span>
-              <span class="chip">GitHub Actions</span>
-              <span class="chip">Product Analytics</span>
-              <span class="chip">SEO</span>
-            </div>
-          </div>
+      <section id="story"><div class="wrap chapter reveal"><div class="chapter-no"><b>01</b><br><br>The foundation</div><div>
+        <h2 class="story-title">Before AI, I learned how <em>customers actually experience technology.</em></h2>
+        <p class="story-copy">Microsoft. Accenture. McAfee. Reliance. Different companies, different problems — one recurring lesson: technology only creates value when people can trust it, use it and grow with it.</p>
+        <div class="journey">
+          <div class="journey-row"><div class="journey-year">2011 — 2014</div><div><h3>Learn the craft.</h3><p>Started close to the customer, solving technical problems and learning the discipline of service, escalation and ownership.</p></div></div>
+          <div class="journey-row"><div class="journey-year">2014 — 2020</div><div><h3>See the whole system.</h3><p>Moved from individual cases to strategic accounts, executive relationships, global operations, transitions and change at scale.</p></div></div>
+          <div class="journey-row"><div class="journey-year">2020 — 2025</div><div><h3>Make relationships grow.</h3><p>Customer success, account growth, CXO engagement, business reviews, revenue opportunities and teams operating at enterprise scale.</p></div></div>
         </div>
-      </section>
-
-      <section id="impact">
-        <div class="wrap">
-          <p class="kicker" style="color:var(--subtle)">Impact</p>
-          <h2 class="section-title">Numbers that hold under pressure</h2>
-
-          <div class="metrics">
-            <div class="metric"><b>14+</b><span>Years across enterprise technology, customer success, and service delivery</span></div>
-            <div class="metric"><b>82</b><span>Professionals led across three regions</span></div>
-            <div class="metric"><b>100%</b><span>SLA compliance at Accenture</span></div>
-            <div class="metric"><b>30%</b><span>Escalation reduction at McAfee</span></div>
-            <div class="metric"><b>22%</b><span>Recurring-incident reduction</span></div>
-            <div class="metric"><b>$1.5M+</b><span>Quarterly revenue contributed through account growth</span></div>
-          </div>
+      </div></div></section>
+      <section id="impact"><div class="wrap chapter reveal"><div class="chapter-no"><b>02</b><br><br>What stayed</div><div>
+        <h2 class="story-title">Different roles. The same <em>operating system.</em></h2>
+        <p class="story-copy">Understand the customer. Find the friction. Build the operating rhythm. Make the outcome measurable. Then improve it.</p>
+        <div class="metrics"><div class="metric"><b>50+</b><span>Enterprise accounts managed</span></div><div class="metric"><b>$1.5M+</b><span>Quarterly revenue contributed through growth</span></div><div class="metric"><b>82</b><span>Professionals led across three regions</span></div><div class="metric"><b>100%</b><span>SLA compliance</span></div><div class="metric"><b>30%</b><span>Escalation reduction</span></div><div class="metric"><b>22%</b><span>Recurring-incident reduction</span></div></div>
+        <div class="big-quote">The skill I kept carrying forward was not support.<br><em>It was ownership.</em></div>
+      </div></div></section>
+      <section id="ai" class="turn"><div class="wrap chapter reveal"><div class="chapter-no"><b>03</b><br><br>The turn</div><div>
+        <h2 class="story-title">Then I stopped asking <em>“how does this work?”</em></h2><p class="story-copy">I started asking: <strong>“What can I build with it?”</strong></p>
+        <div class="build-grid"><div class="product-story"><span class="live">● LIVE PROJECT</span><h3>HireOnAI</h3><p>An AI-powered job-search and career-coaching product connecting live job data, AI analysis, skill gaps, learning recommendations and career growth.</p>
+          <div class="flow"><div>Live job data <span>01</span></div><div>AI analysis <span>02</span></div><div>Profile + skill gaps <span>03</span></div><div>Learning recommendations <span>04</span></div><div>Career growth <span>05</span></div></div>
+          <div class="chips"><span class="chip">Python / FastAPI</span><span class="chip">Groq</span><span class="chip">Claude API</span><span class="chip">PostgreSQL</span><span class="chip">Supabase</span><span class="chip">Redis</span><span class="chip">OAuth</span><span class="chip">Render</span><span class="chip">GitHub Actions</span></div>
+        </div><div class="terminal"><b>$</b> git log --oneline<br><br><strong>build</strong>&nbsp;&nbsp;&nbsp;AI recommendations<br><strong>ship</strong>&nbsp;&nbsp;&nbsp;&nbsp;live job intelligence<br><strong>fix</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;production authentication<br><strong>add</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;analytics + observability<br><strong>integrate</strong> LLM APIs<br><strong>optimize</strong>&nbsp;SEO + discovery<br><strong>debug</strong>&nbsp;&nbsp;&nbsp;deployment issues<br><strong>iterate</strong>&nbsp;product experience<br><br><b>$</b> git status<br><b>building what comes next ✓</b></div></div>
+        <div class="big-quote">I don't want AI to be a line on my resume.<br><em>I want it to be something I can ship.</em></div>
+      </div></div></section>
+      <section id="intersection"><div class="wrap chapter reveal"><div class="chapter-no"><b>04</b><br><br>The intersection</div><div class="intersection"><div>
+        <h2 class="story-title">My next chapter lives where <em>three worlds meet.</em></h2>
+        <div class="paths"><div><h3>Customer</h3><p>Customer Success · Strategic Accounts · CX · Executive Relationships</p></div><div><h3>Business</h3><p>Growth · Revenue · Account Strategy · Operational Scale</p></div><div><h3>Technology</h3><p>AI Products · LLMs · Python · APIs · Data · Cloud</p></div></div>
+        </div><div class="venn"><div class="vc v1">CUSTOMER</div><div class="vc v2">BUSINESS</div><div class="vc v3">TECHNOLOGY</div><div class="vcore">AI<br>+<br>PRODUCT</div></div></div>
+      </div></div></section>
+      <section id="experience"><div class="wrap chapter reveal"><div class="chapter-no"><b>05</b><br><br>The evidence</div><div>
+        <h2 class="story-title">The career behind <em>the story.</em></h2>
+        <div style="margin-top:45px">
+          <details open><summary><div><div class="role">Customer Operations Manager</div><div class="org">Microsoft · Bengaluru</div></div><div class="when">Mar 2024 — Sep 2025</div></summary><ul><li>Volume Licensing SME supporting field sellers and customers across contracting, order management, billing and operational escalations.</li><li>Managed agreement validation and post-sales lifecycle transactions against Global and SOX-approved deal financials.</li><li>Reported operational KPIs through monthly business reviews.</li></ul></details>
+          <details><summary><div><div class="role">Support Engineering Manager</div><div class="org">Microsoft via Teamware · Bengaluru</div></div><div class="when">Oct 2023 — Mar 2024</div></summary><ul><li>Led Support Engineers and escalation specialists while acting as Voice of Customer to Engineering.</li><li>Coached performance, technical depth and career development.</li></ul></details>
+          <details><summary><div><div class="role">Customer Service Manager</div><div class="org">McAfee · Western Europe · Team of 25</div></div><div class="when">Dec 2020 — May 2022</div></summary><ul><li>Directed multilingual 24×7 operations and reduced escalations by 30%.</li><li>Led global technical-operations insourcing across US, Canada, EMEA and APAC.</li></ul></details>
+          <details><summary><div><div class="role">Manager, Customer Success</div><div class="org">Reliance Industries · Bengaluru</div></div><div class="when">Feb 2020 — Nov 2020</div></summary><ul><li>Managed 50+ enterprise accounts including Apple, Amazon, Infosys and Intel.</li><li>Contributed $1.5M+ quarterly revenue through cross-selling and account growth.</li></ul></details>
+          <details><summary><div><div class="role">Team Manager, Operations</div><div class="org">Accenture · Global · Team of 82</div></div><div class="when">Apr 2018 — Feb 2020</div></summary><ul><li>Led an 82-member global team with 100% SLA compliance.</li><li>Managed a 500+ staff transition with zero service disruption and reduced recurring incidents by 22%.</li></ul></details>
+          <details><summary><div><div class="role">Sr. Support Analyst — Premier Services</div><div class="org">Microsoft via Randstad</div></div><div class="when">Apr 2014 — Apr 2018</div></summary><ul><li>Delivery lead and technical account manager for strategic Premier accounts.</li><li>Managed CXO relationships for Intel, Tesco, Genpact and Juniper Networks.</li></ul></details>
+          <details><summary><div><div class="role">Earlier Career</div><div class="org">Accenture · Infinite Computer Solutions</div></div><div class="when">2011 — 2013</div></summary><ul><li>Built the foundation in technical support, incident management, customer service and consultative selling.</li></ul></details>
         </div>
-      </section>
-
-      <section id="about">
-        <div class="wrap about">
-          <div>
-            <p class="kicker" style="color:var(--subtle)">About</p>
-            <h2 class="section-title">Customer growth, enterprise relationships, and technology leadership</h2>
-          </div>
-
-          <div>
-            <p class="summary">
-              Customer Success and enterprise account leader with 14+ years
-              across Microsoft, McAfee, Accenture, and Reliance. Experienced in
-              strategic customer relationships, account growth, executive
-              stakeholder management, customer experience, service delivery,
-              technology operations, and complex enterprise environments.
-              Alongside this experience, I am building practical AI products
-              end to end and developing hands-on capability across modern AI
-              and web technologies.
-            </p>
-
-            <ul class="wins">
-              <li><span class="dot"></span>Managed strategic enterprise relationships and executive stakeholders across complex technology environments, connecting customer outcomes to business priorities.</li>
-              <li><span class="dot"></span>Built customer-success operating rhythms through business reviews, KPI governance, Voice of Customer programs, and structured improvement plans.</li>
-              <li><span class="dot"></span>Improved CSAT by 12% at Microsoft through structured Voice of Customer programs and data-driven customer-experience improvements.</li>
-              <li><span class="dot"></span>Managed a 50+ enterprise-account portfolio at Reliance and contributed $1.5M+ in quarterly revenue through cross-selling and account-growth opportunities.</li>
-              <li><span class="dot"></span>Built practical AI and technology capability by designing, coding, deploying, debugging, and iterating on HireOnAI.in as an end-to-end AI product.</li>
-              <li><span class="dot"></span>Reduced recurring incidents by 22% through structured root-cause analysis and continuous service improvement.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience">
-        <div class="wrap">
-          <p class="kicker" style="color:var(--subtle)">Experience</p>
-          <h2 class="section-title">Customer success, account growth, and technology leadership</h2>
-
-          <div style="margin-top:48px">
-
-            <details open>
-              <summary>
-                <div>
-                  <div class="role">Customer Operations Manager</div>
-                  <div class="org">Microsoft · Bengaluru</div>
-                </div>
-                <div class="when">Mar 2024 — Sep 2025</div>
-              </summary>
-              <ul>
-                <li>Subject-matter expert in Microsoft Volume Licensing, providing transactional support to field sellers and customers on contracting and order management.</li>
-                <li>Managed validation and execution of agreements and post-sales lifecycle transactions against Global and SOX-approved deal financials.</li>
-                <li>Directed billing execution and credit approval management, including Finance exception approvals on high-value credits.</li>
-                <li>Primary point of contact for escalated operational customer service issues; reported KPIs through monthly business reviews.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Support Engineering Manager</div>
-                  <div class="org">Microsoft (via Teamware Solutions) · Bengaluru</div>
-                </div>
-                <div class="when">Oct 2023 — Mar 2024</div>
-              </summary>
-              <ul>
-                <li>Built and led Support Engineers and Support Escalation Engineers focused on performance, technical depth, and customer-obsessed delivery.</li>
-                <li>Acted as the voice of the customer to Microsoft Engineering, driving changes that enhanced the end-to-end customer experience.</li>
-                <li>Conducted assessments, coaching, feedback discussions, and individual career development planning.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Customer Service Manager</div>
-                  <div class="org">McAfee Software · Western Europe · Team of 25</div>
-                </div>
-                <div class="when">Dec 2020 — May 2022</div>
-              </summary>
-              <ul>
-                <li>Directed multilingual 24×7 support operations across Western Europe.</li>
-                <li>Reduced escalation rates by 30% through real-time queue monitoring, structured QA workflows, and targeted coaching.</li>
-                <li>Spearheaded insourcing of Global Technical Operations from Sutherland across the US, Canada, EMEA, and APAC.</li>
-                <li>Designed KPI dashboards tracking SLA compliance, ticket volumes, handle times, and CSAT.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Manager, Customer Success</div>
-                  <div class="org">Reliance Industries (RIL) · Bengaluru</div>
-                </div>
-                <div class="when">Feb 2020 — Nov 2020</div>
-              </summary>
-              <ul>
-                <li>Managed a portfolio of 50+ enterprise accounts including Apple, Amazon, Infosys, and Intel.</li>
-                <li>Shaped account strategy through structured quarterly business reviews.</li>
-                <li>Monitored usage trends to uncover expansion opportunities; contributed $1.5M+ in quarterly revenue through cross-selling.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Team Manager, Operations</div>
-                  <div class="org">Accenture · Global · Team of 82</div>
-                </div>
-                <div class="when">Apr 2018 — Feb 2020</div>
-              </summary>
-              <ul>
-                <li>Led an 82-member global support team for Microsoft accounts, achieving 100% SLA compliance.</li>
-                <li>Managed end-to-end transition of Microsoft support operations to Accenture, onboarding 500+ staff with zero service disruption.</li>
-                <li>Delivered Microsoft process workshops in Dalian, Bucharest, and San Jose.</li>
-                <li>Applied Prosci change management; reduced recurring incidents by 22% and improved team retention by 18%.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Sr. Support Analyst — Premier Services, SMSG</div>
-                  <div class="org">Microsoft (via Randstad India)</div>
-                </div>
-                <div class="when">Apr 2014 — Apr 2018</div>
-              </summary>
-              <ul>
-                <li>Primary delivery lead and technical account manager for strategic Microsoft Premier accounts.</li>
-                <li>Managed CXO relationships for Intel, Tesco, Genpact, and Juniper Networks.</li>
-                <li>Tracked Azure consumption and ARR milestones; featured in a $2.66M Intel success story and a $3.4M Tesco UK renewal.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Support Analyst</div>
-                  <div class="org">Accenture</div>
-                </div>
-                <div class="when">Jun 2012 — Dec 2013</div>
-              </summary>
-              <ul>
-                <li>ITIL-aligned incident management across Active Directory, IPSEC, Microsoft Tools, and SAP.</li>
-                <li>Escalation Manager for P2/P3 cases; contributed to problem management and continuous service improvement.</li>
-              </ul>
-            </details>
-
-            <details>
-              <summary>
-                <div>
-                  <div class="role">Sr. Support Engineer</div>
-                  <div class="org">Infinite Computer Solutions</div>
-                </div>
-                <div class="when">2011 — 2012</div>
-              </summary>
-              <ul>
-                <li>Delivered multi-channel technical support for Apple products.</li>
-                <li>Achieved 21% conversion rate on product recommendations through consultative selling.</li>
-              </ul>
-            </details>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <div class="wrap">
-          <p class="kicker" style="color:var(--subtle)">Capabilities</p>
-          <h2 class="section-title">Growth, customer experience, account management, and AI technology</h2>
-
-          <div class="grid-3">
-
-            <div class="card">
-              <h3>Customer & growth</h3>
-
-              <div class="chips">
-                <span class="chip">Customer Success</span>
-                <span class="chip">Enterprise Account Management</span>
-                <span class="chip">Customer Growth</span>
-                <span class="chip">Strategic Accounts</span>
-                <span class="chip">Account Strategy</span>
-                <span class="chip">Revenue Growth & Cross-sell</span>
-                <span class="chip">Customer Experience</span>
-                <span class="chip">Executive Stakeholder Management</span>
-                <span class="chip">Customer Onboarding</span>
-                <span class="chip">Voice of Customer</span>
-                <span class="chip">QBRs / Business Reviews</span>
-                <span class="chip">CSAT / NPS</span>
-                <span class="chip">Service Delivery</span>
-                <span class="chip">Change Management</span>
-              </div>
-            </div>
-
-            <div class="card">
-              <h3>AI & technology</h3>
-
-              <div class="chips">
-                <span class="chip">AI Product Development</span>
-                <span class="chip">LLM Integration</span>
-                <span class="chip">Python</span>
-                <span class="chip">FastAPI</span>
-                <span class="chip">Groq</span>
-                <span class="chip">Claude API</span>
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">Supabase</span>
-                <span class="chip">Redis</span>
-                <span class="chip">Google OAuth</span>
-                <span class="chip">Microsoft Azure</span>
-                <span class="chip">Render</span>
-                <span class="chip">GitHub Actions</span>
-                <span class="chip">Product Analytics</span>
-                <span class="chip">SEO</span>
-              </div>
-            </div>
-
-            <div>
-              <div class="card">
-                <h3>Tools & platforms</h3>
-
-                <ul class="stack">
-                  <li>Salesforce CRM</li>
-                  <li>ServiceNow</li>
-                  <li>Zendesk</li>
-                  <li>JIRA</li>
-                  <li>Power BI</li>
-                  <li>Azure Portal</li>
-                  <li>Microsoft Azure</li>
-                  <li>Sentry</li>
-                  <li>PostHog</li>
-                  <li>Microsoft Clarity</li>
-                </ul>
-              </div>
-
-              <div class="card" style="margin-top:24px">
-                <h3>Certifications</h3>
-
-                <ul class="stack">
-                  <li>Prosci Change Management Practitioner</li>
-                  <li>Microsoft Azure for IT Pros</li>
-                  <li>Deploying Web Apps and Python — Microsoft</li>
-                  <li>Microsoft Blockchain as a Service</li>
-                  <li>Generative AI Fundamentals — Microsoft</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="wrap">
-          <p class="kicker" style="color:var(--subtle)">Contact</p>
-
-          <h2>Let’s build what comes next.</h2>
-
-          <p class="lede">
-            Available for Customer Success, Growth, Enterprise Account
-            Management, and emerging AI technology roles. Bengaluru-based,
-            open to remote and global teams.
-          </p>
-
-          <div class="actions">
-            <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
-            <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
-            <a
-              class="btn btn-ghost"
-              href="https://www.linkedin.com/in/rajivbuda-692410b0"
-              target="_blank"
-              rel="noreferrer"
-            >LinkedIn</a>
-          </div>
-        </div>
-      </section>
-
+      </div></div></section>
+      <section id="skills"><div class="wrap chapter reveal"><div class="chapter-no"><b>06</b><br><br>The toolbox</div><div>
+        <h2 class="story-title">Experience gives me context. <em>Building gives me range.</em></h2>
+        <div class="grid-3"><div class="card"><h3>Customer & growth</h3><div class="chips"><span class="chip">Customer Success</span><span class="chip">Enterprise Accounts</span><span class="chip">Growth</span><span class="chip">Account Strategy</span><span class="chip">Executive Stakeholders</span><span class="chip">Voice of Customer</span><span class="chip">QBRs</span><span class="chip">CSAT / NPS</span></div></div><div class="card"><h3>AI & product</h3><div class="chips"><span class="chip">AI Product Development</span><span class="chip">LLM Integration</span><span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Groq</span><span class="chip">Claude API</span><span class="chip">PostgreSQL</span><span class="chip">Supabase</span><span class="chip">Redis</span><span class="chip">GitHub Actions</span></div></div><div class="card"><h3>Enterprise technology</h3><div class="chips"><span class="chip">Azure</span><span class="chip">Salesforce</span><span class="chip">ServiceNow</span><span class="chip">JIRA</span><span class="chip">Power BI</span><span class="chip">Sentry</span><span class="chip">PostHog</span><span class="chip">Clarity</span></div></div></div>
+      </div></div></section>
+      <section id="contact" class="contact"><div class="wrap chapter reveal"><div class="chapter-no"><b>07</b><br><br>What's next</div><div><h2 class="story-title" style="font-size:clamp(4rem,9vw,8rem)">This isn't the finished story.</h2><p class="story-copy">I'm building toward the intersection of AI, customers, business and technology — bringing enterprise experience into a world where ideas can become products faster than ever.</p><div class="actions"><a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">Let's build what's next ↗</a><a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a></div></div></div></section>
     </main>
 
     <div class="wrap">
@@ -663,5 +389,9 @@
       </footer>
     </div>
 
+    <script>
+      const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+      document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    </script>
   </body>
 </html>
