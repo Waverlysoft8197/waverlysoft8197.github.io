@@ -6,7 +6,7 @@
     <title>Rajiv Buda</title>
     <meta
       name="description"
-      content="Rajiv Buda — Support Operations Manager, Customer Success, and Technical Support leader. 14+ years across Microsoft, McAfee, and Accenture."
+      content="Rajiv Buda — Customer Success, Growth, Enterprise Account Management, and AI Technology builder. 14+ years across Microsoft, McAfee, and Accenture."
     />
     <meta name="theme-color" content="#0a0b0d" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
@@ -101,7 +101,12 @@
         letter-spacing: -0.03em;
         margin: 20px 0 0;
       }
-      .lede { font-size: clamp(1.125rem, 2vw, 1.25rem); color: var(--muted); max-width: 36rem; margin-top: 24px; }
+      .lede {
+        font-size: clamp(1.125rem, 2vw, 1.25rem);
+        color: var(--muted);
+        max-width: 40rem;
+        margin-top: 24px;
+      }
       .meta { color: var(--subtle); font-size: 14px; margin-top: 16px; }
       .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
       section { padding: 80px 0; border-top: 1px solid var(--border); }
@@ -127,18 +132,48 @@
         font-weight: 400;
         letter-spacing: -0.03em;
       }
-      .metric span { display: block; margin-top: 12px; color: var(--muted); font-size: 14px; max-width: 16ch; }
+      .metric span {
+        display: block;
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 14px;
+        max-width: 18ch;
+      }
       .about { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; }
       .summary { font-size: 18px; color: var(--muted); line-height: 1.7; margin: 0; }
       .wins { list-style: none; padding: 0; margin: 40px 0 0; }
       .wins li {
-        display: flex; gap: 16px;
+        display: flex;
+        gap: 16px;
         border-top: 1px solid var(--border);
         padding: 20px 0 0;
         margin-top: 20px;
         line-height: 1.6;
       }
-      .dot { width: 6px; height: 6px; border-radius: 99px; background: var(--accent); margin-top: 10px; flex: none; }
+      .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 99px;
+        background: var(--accent);
+        margin-top: 10px;
+        flex: none;
+      }
+      .ai-box {
+        margin-top: 40px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        border-radius: 14px;
+        padding: 32px;
+      }
+      .ai-box h3 {
+        font-family: var(--display);
+        font-size: 28px;
+      }
+      .ai-box p {
+        color: var(--muted);
+        line-height: 1.7;
+        max-width: 52rem;
+      }
       details { border-bottom: 1px solid var(--border); }
       details:first-of-type { border-top: 1px solid var(--border); }
       summary {
@@ -152,17 +187,39 @@
       summary::-webkit-details-marker { display: none; }
       .role { font-family: var(--display); font-size: 22px; }
       .org { color: var(--muted); font-size: 14px; margin-top: 4px; }
-      .when { color: var(--subtle); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; padding-top: 8px; }
+      .when {
+        color: var(--subtle);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        padding-top: 8px;
+      }
       details ul { margin: 0 0 28px; padding: 0; max-width: 48rem; }
-      details li { color: var(--muted); margin: 0 0 12px; line-height: 1.6; list-style: none; }
-      .grid-3 { display: grid; grid-template-columns: 1.2fr 0.9fr 0.9fr; gap: 24px; margin-top: 40px; }
+      details li {
+        color: var(--muted);
+        margin: 0 0 12px;
+        line-height: 1.6;
+        list-style: none;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: 1.2fr 0.9fr 0.9fr;
+        gap: 24px;
+        margin-top: 40px;
+      }
       .card {
         border: 1px solid var(--border);
         background: var(--surface);
         border-radius: 14px;
         padding: 28px;
       }
-      .card h3 { font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--subtle); }
+      .card h3 {
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--subtle);
+      }
       .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
       .chip {
         border: 1px solid var(--border);
@@ -172,7 +229,11 @@
         border-radius: 4px;
       }
       .stack { list-style: none; padding: 0; margin: 20px 0 0; }
-      .stack li { border-bottom: 1px solid var(--border); padding: 12px 0; font-size: 14px; }
+      .stack li {
+        border-bottom: 1px solid var(--border);
+        padding: 12px 0;
+        font-size: 14px;
+      }
       .stack li:last-child { border: 0; }
       .contact h2 {
         font-family: var(--display);
@@ -189,7 +250,14 @@
         justify-content: space-between;
         gap: 12px;
       }
-      .menu-btn { display: none; width: 44px; height: 44px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); }
+      .menu-btn {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: var(--surface);
+      }
       @media (max-width: 900px) {
         .metrics { grid-template-columns: 1fr 1fr; }
         .about, .grid-3 { grid-template-columns: 1fr; gap: 40px; }
@@ -203,6 +271,7 @@
       }
     </style>
   </head>
+
   <body>
     <header>
       <div class="wrap nav">
@@ -210,29 +279,88 @@
           <span class="mono">RB</span>
           <span>Rajiv Buda</span>
         </a>
+
         <nav class="links">
           <a href="#about">About</a>
+          <a href="#ai">AI & Technology</a>
           <a href="#impact">Impact</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Capabilities</a>
           <a class="btn btn-solid" style="height:40px" href="mailto:maxrajiv@gmail.com">Get in touch</a>
         </nav>
+
         <a class="menu-btn" href="#contact" aria-label="Contact">Contact</a>
       </div>
     </header>
 
     <main id="top">
+
       <section class="hero" style="border-top:0">
         <div class="wrap">
           <p class="kicker">Open to remote and global roles</p>
+
           <h1 class="name">Rajiv Buda</h1>
-          <p class="lede">Support Operations Manager · Customer Success · Technical Support</p>
+
+          <p class="lede">
+            Customer Success · Growth · Enterprise Account Management · AI Technology
+          </p>
+
           <p class="meta">Bengaluru, India · Open to remote</p>
+
           <div class="actions">
             <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/rajivbuda-692410b0"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn</a>
             <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
             <a class="btn btn-ghost" href="./Rajiv-Buda-Resume.pdf">Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai">
+        <div class="wrap">
+          <p class="kicker" style="color:var(--subtle)">AI & Technology</p>
+
+          <h2 class="section-title">Building with AI, not just talking about it</h2>
+
+          <div class="ai-box">
+            <h3>From enterprise leadership to hands-on AI product development</h3>
+
+            <p>
+              I have expanded from enterprise customer success, account management,
+              and technology operations into hands-on AI product development —
+              learning by building, deploying, debugging, and improving real
+              software.
+            </p>
+
+            <p>
+              <strong>HireOnAI.in</strong> is my current AI product project:
+              a job-search and career-coaching application combining live job
+              data, AI-assisted resume tailoring, skill recommendations,
+              authentication, data storage, analytics, SEO, and production
+              deployment. I designed and built the application end to end,
+              connecting AI APIs with a practical user workflow.
+            </p>
+
+            <div class="chips">
+              <span class="chip">AI Product Development</span>
+              <span class="chip">LLM Integration</span>
+              <span class="chip">Python FastAPI</span>
+              <span class="chip">Groq</span>
+              <span class="chip">Claude API</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Redis</span>
+              <span class="chip">Google OAuth</span>
+              <span class="chip">Render</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">Product Analytics</span>
+              <span class="chip">SEO</span>
+            </div>
           </div>
         </div>
       </section>
@@ -241,13 +369,14 @@
         <div class="wrap">
           <p class="kicker" style="color:var(--subtle)">Impact</p>
           <h2 class="section-title">Numbers that hold under pressure</h2>
+
           <div class="metrics">
-            <div class="metric"><b>14+</b><span>Years leading support operations</span></div>
+            <div class="metric"><b>14+</b><span>Years across enterprise technology, customer success, and service delivery</span></div>
             <div class="metric"><b>82</b><span>Professionals led across three regions</span></div>
             <div class="metric"><b>100%</b><span>SLA compliance at Accenture</span></div>
             <div class="metric"><b>30%</b><span>Escalation reduction at McAfee</span></div>
             <div class="metric"><b>22%</b><span>Recurring-incident reduction</span></div>
-            <div class="metric"><b>$4B+</b><span>Enterprise portfolio supported</span></div>
+            <div class="metric"><b>$1.5M+</b><span>Quarterly revenue contributed through account growth</span></div>
           </div>
         </div>
       </section>
@@ -256,19 +385,28 @@
         <div class="wrap about">
           <div>
             <p class="kicker" style="color:var(--subtle)">About</p>
-            <h2 class="section-title">Built for 24×7 enterprise service</h2>
+            <h2 class="section-title">Customer growth, enterprise relationships, and technology leadership</h2>
           </div>
+
           <div>
             <p class="summary">
-              Customer Success and Support Operations leader with 14+ years managing global 24×7 technical support, enterprise relationships, service delivery, escalation management, and support transformation across Microsoft, McAfee, and Accenture. Proven leading teams of up to 82 professionals across APAC, EMEA, and North America, governing SLAs and KPIs, and supporting enterprise portfolios exceeding $4 billion.
+              Customer Success and enterprise account leader with 14+ years
+              across Microsoft, McAfee, Accenture, and Reliance. Experienced in
+              strategic customer relationships, account growth, executive
+              stakeholder management, customer experience, service delivery,
+              technology operations, and complex enterprise environments.
+              Alongside this experience, I am building practical AI products
+              end to end and developing hands-on capability across modern AI
+              and web technologies.
             </p>
+
             <ul class="wins">
-              <li><span class="dot"></span>Achieved 100% SLA compliance while leading an 82-member global support team for Microsoft accounts at Accenture.</li>
-              <li><span class="dot"></span>Reduced customer escalations by 30% at McAfee through real-time queue monitoring, QA workflows, process redesign, and targeted coaching.</li>
-              <li><span class="dot"></span>Improved CSAT by 12% at Microsoft through structured Voice of Customer programs and data-driven service improvements.</li>
-              <li><span class="dot"></span>Led McAfee Global Technical Operations insourcing from Sutherland across the US, Canada, EMEA, and APAC with zero service disruption.</li>
-              <li><span class="dot"></span>Managed the transition and onboarding of 500+ staff for a global Microsoft support organization at Accenture.</li>
-              <li><span class="dot"></span>Reduced recurring incidents by 22% through structured root cause analysis; improved team retention by 18% via career development and recognition.</li>
+              <li><span class="dot"></span>Managed strategic enterprise relationships and executive stakeholders across complex technology environments, connecting customer outcomes to business priorities.</li>
+              <li><span class="dot"></span>Built customer-success operating rhythms through business reviews, KPI governance, Voice of Customer programs, and structured improvement plans.</li>
+              <li><span class="dot"></span>Improved CSAT by 12% at Microsoft through structured Voice of Customer programs and data-driven customer-experience improvements.</li>
+              <li><span class="dot"></span>Managed a 50+ enterprise-account portfolio at Reliance and contributed $1.5M+ in quarterly revenue through cross-selling and account-growth opportunities.</li>
+              <li><span class="dot"></span>Built practical AI and technology capability by designing, coding, deploying, debugging, and iterating on HireOnAI.in as an end-to-end AI product.</li>
+              <li><span class="dot"></span>Reduced recurring incidents by 22% through structured root-cause analysis and continuous service improvement.</li>
             </ul>
           </div>
         </div>
@@ -277,8 +415,10 @@
       <section id="experience">
         <div class="wrap">
           <p class="kicker" style="color:var(--subtle)">Experience</p>
-          <h2 class="section-title">Fourteen years across Microsoft, McAfee, and Accenture</h2>
+          <h2 class="section-title">Customer success, account growth, and technology leadership</h2>
+
           <div style="margin-top:48px">
+
             <details open>
               <summary>
                 <div>
@@ -294,6 +434,7 @@
                 <li>Primary point of contact for escalated operational customer service issues; reported KPIs through monthly business reviews.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -308,6 +449,7 @@
                 <li>Conducted assessments, coaching, feedback discussions, and individual career development planning.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -323,6 +465,7 @@
                 <li>Designed KPI dashboards tracking SLA compliance, ticket volumes, handle times, and CSAT.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -337,6 +480,7 @@
                 <li>Monitored usage trends to uncover expansion opportunities; contributed $1.5M+ in quarterly revenue through cross-selling.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -352,6 +496,7 @@
                 <li>Applied Prosci change management; reduced recurring incidents by 22% and improved team retention by 18%.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -366,6 +511,7 @@
                 <li>Tracked Azure consumption and ARR milestones; featured in a $2.66M Intel success story and a $3.4M Tesco UK renewal.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -379,6 +525,7 @@
                 <li>Escalation Manager for P2/P3 cases; contributed to problem management and continuous service improvement.</li>
               </ul>
             </details>
+
             <details>
               <summary>
                 <div>
@@ -392,6 +539,7 @@
                 <li>Achieved 21% conversion rate on product recommendations through consultative selling.</li>
               </ul>
             </details>
+
           </div>
         </div>
       </section>
@@ -399,46 +547,74 @@
       <section id="skills">
         <div class="wrap">
           <p class="kicker" style="color:var(--subtle)">Capabilities</p>
-          <h2 class="section-title">How the work actually gets done</h2>
+          <h2 class="section-title">Growth, customer experience, account management, and AI technology</h2>
+
           <div class="grid-3">
+
             <div class="card">
-              <h3>Core skills</h3>
+              <h3>Customer & growth</h3>
+
               <div class="chips">
-                <span class="chip">Support Operations Management</span>
-                <span class="chip">Global 24×7 Technical Support</span>
-                <span class="chip">Technical Support Leadership</span>
                 <span class="chip">Customer Success</span>
                 <span class="chip">Enterprise Account Management</span>
-                <span class="chip">SLA Governance & Compliance</span>
-                <span class="chip">Escalation & Incident Management</span>
-                <span class="chip">Root Cause Analysis</span>
-                <span class="chip">Service Delivery</span>
-                <span class="chip">CSAT / NPS</span>
-                <span class="chip">KPI & Performance Management</span>
-                <span class="chip">Workforce Planning</span>
-                <span class="chip">Quality Assurance</span>
-                <span class="chip">Coaching & Career Development</span>
-                <span class="chip">Change Management</span>
+                <span class="chip">Customer Growth</span>
+                <span class="chip">Strategic Accounts</span>
+                <span class="chip">Account Strategy</span>
+                <span class="chip">Revenue Growth & Cross-sell</span>
+                <span class="chip">Customer Experience</span>
+                <span class="chip">Executive Stakeholder Management</span>
                 <span class="chip">Customer Onboarding</span>
-                <span class="chip">Stakeholder & Executive Communication</span>
-                <span class="chip">Azure Cloud Support</span>
+                <span class="chip">Voice of Customer</span>
+                <span class="chip">QBRs / Business Reviews</span>
+                <span class="chip">CSAT / NPS</span>
+                <span class="chip">Service Delivery</span>
+                <span class="chip">Change Management</span>
               </div>
             </div>
+
             <div class="card">
-              <h3>Tools & platforms</h3>
-              <ul class="stack">
-                <li>ServiceNow (ITSM/CSM)</li>
-                <li>Zendesk</li>
-                <li>JIRA</li>
-                <li>Salesforce CRM</li>
-                <li>Power BI</li>
-                <li>Azure Portal</li>
-                <li>Microsoft Azure</li>
-              </ul>
+              <h3>AI & technology</h3>
+
+              <div class="chips">
+                <span class="chip">AI Product Development</span>
+                <span class="chip">LLM Integration</span>
+                <span class="chip">Python</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Groq</span>
+                <span class="chip">Claude API</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Supabase</span>
+                <span class="chip">Redis</span>
+                <span class="chip">Google OAuth</span>
+                <span class="chip">Microsoft Azure</span>
+                <span class="chip">Render</span>
+                <span class="chip">GitHub Actions</span>
+                <span class="chip">Product Analytics</span>
+                <span class="chip">SEO</span>
+              </div>
             </div>
+
             <div>
               <div class="card">
+                <h3>Tools & platforms</h3>
+
+                <ul class="stack">
+                  <li>Salesforce CRM</li>
+                  <li>ServiceNow</li>
+                  <li>Zendesk</li>
+                  <li>JIRA</li>
+                  <li>Power BI</li>
+                  <li>Azure Portal</li>
+                  <li>Microsoft Azure</li>
+                  <li>Sentry</li>
+                  <li>PostHog</li>
+                  <li>Microsoft Clarity</li>
+                </ul>
+              </div>
+
+              <div class="card" style="margin-top:24px">
                 <h3>Certifications</h3>
+
                 <ul class="stack">
                   <li>Prosci Change Management Practitioner</li>
                   <li>Microsoft Azure for IT Pros</li>
@@ -447,16 +623,8 @@
                   <li>Generative AI Fundamentals — Microsoft</li>
                 </ul>
               </div>
-              <div class="card" style="margin-top:24px">
-                <h3>Languages</h3>
-                <ul class="stack">
-                  <li>English — Professional</li>
-                  <li>Hindi — Native</li>
-                  <li>Odia — Native</li>
-                  <li>Bengali — Conversational</li>
-                </ul>
-              </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -464,23 +632,36 @@
       <section id="contact" class="contact">
         <div class="wrap">
           <p class="kicker" style="color:var(--subtle)">Contact</p>
-          <h2>Let’s talk about the next operating model.</h2>
-          <p class="lede">Available for Support Operations, Customer Success, and Technical Support leadership roles. Bengaluru-based, open to remote and global teams.</p>
+
+          <h2>Let’s build what comes next.</h2>
+
+          <p class="lede">
+            Available for Customer Success, Growth, Enterprise Account
+            Management, and emerging AI technology roles. Bengaluru-based,
+            open to remote and global teams.
+          </p>
+
           <div class="actions">
             <a class="btn btn-solid" href="mailto:maxrajiv@gmail.com">maxrajiv@gmail.com</a>
             <a class="btn btn-ghost" href="tel:+918368207440">+91 83682 07440</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/rajivbuda-692410b0" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/rajivbuda-692410b0"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn</a>
           </div>
-          <p class="meta">B.Sc. — Biology · Utkal University · 2009</p>
         </div>
       </section>
+
     </main>
 
     <div class="wrap">
       <footer>
         <p>Rajiv Buda · 2026</p>
-        <p>Support operations leadership, written plainly.</p>
+        <p>Customer growth, technology, and AI — built in public.</p>
       </footer>
     </div>
+
   </body>
 </html>
